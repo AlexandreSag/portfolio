@@ -10,19 +10,19 @@ export const PROJECT_HASHES = {
 
 export const projectMedia = {
   [PROJECT_KEYS.ichiGo]: {
-    video: '/projects/ichi-go-ichi-go/app-presentation.mp4',
+    video: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/app-presentation.mp4`,
     images: [
-      { src: '/projects/ichi-go-ichi-go/home.png', key: 'home' },
-      { src: '/projects/ichi-go-ichi-go/lexicon.png', key: 'lexicon' },
-      { src: '/projects/ichi-go-ichi-go/learn.png', key: 'learn' },
-      { src: '/projects/ichi-go-ichi-go/quiz.png', key: 'quiz' },
-      { src: '/projects/ichi-go-ichi-go/results.png', key: 'results' },
+      { src: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/home.png`, key: 'home' },
+      { src: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/lexicon.png`, key: 'lexicon' },
+      { src: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/learn.png`, key: 'learn' },
+      { src: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/quiz.png`, key: 'quiz' },
+      { src: `${import.meta.env.BASE_URL}projects/ichi-go-ichi-go/results.png`, key: 'results' },
     ],
   },
   [PROJECT_KEYS.shikigami]: {
     images: [
-      { src: '/projects/shikigami/light-ui.png', key: 'lightUi' },
-      { src: '/projects/shikigami/dark-ui.png', key: 'darkUi' },
+      { src: `${import.meta.env.BASE_URL}projects/shikigami/light-ui.png`, key: 'lightUi' },
+      { src: `${import.meta.env.BASE_URL}projects/shikigami/dark-ui.png`, key: 'darkUi' },
     ],
   },
 };
@@ -38,7 +38,7 @@ export const CONTACT_EMAIL = 'alexandre.sagepro@gmail.com';
 export const contactLinks = {
   email: `mailto:${CONTACT_EMAIL}`,
   linkedin: 'https://www.linkedin.com/in/alexandre-sage-08aa57227/',
-  cv: '/documents/cv-alexandre-sage.pdf',
+  cv: `${import.meta.env.BASE_URL}documents/cv-alexandre-sage.pdf`,
 };
 
 export const getProjectFromHash = (hash) =>
